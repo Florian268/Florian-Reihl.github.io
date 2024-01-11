@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="shortcut icon" href="./assets/favicon.ico" />
+        <title>Florian Reihl</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <script>
+        let currentIndex = 0;
+
+        function changeSlide(direction) {
+            const slider = document.querySelector('.slider');
+            const totalSlides = document.querySelectorAll('.slider img').length;
+            currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+
+            const translateValue = -currentIndex * 100;
+            slider.style.transform = `translateX(${translateValue}%)`;
+        }
+    </script>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <main>
+            <!-- Header -->
+            <header>
+                <nav class="nav-container">
+                    <a href="#"><b></b></a>
+                    <ul class="nav-container__links">
+                        <li class="nav-container__link">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="nav-container__link">
+                            <a href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-container__link">
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <a
+                            href="mailto: kp8@pitt.edu"
+                            target="_blank"
+                            class="nav-contact-link"
+                            >Email</a
+                        >
+                        <li>
+                            <a
+                                href="https://drive.google.com/drive/folders/1w4YFv0IZu1RyPoUX_I6uQ-5gGcAuruvE?usp=sharing"
+                                target="_blank"
+                                class="nav-contact-link"
+                                >Resume</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="home" class="home-section-container section-container">
+                <div class="home__container">
+                    <div class="home__name-info-container">
+                        <div class="home__name-container">
+                            <span class="home__name">Florian Reihl</span>
+                            <span class="home__mission-statement"
+                                >Coder and Aspiring UX Researcher</span
+                            >
+                            <img
+                                src="./assets/Florian.jpg"
+                                class="home__kp-picture-phone"
+                                alt="picture of Florian Reihl"
+                            />
+                        </div>
+                        <div class="home__contact-container">
+                            <div class="home__contact-resource">
+                                <img
+                                    src="./assets/email-logo.webp"
+                                    class="home__icon"
+                                    alt="email icon"
+                                />
+                                <span>frr20@pitt.edu</span>
+                            </div>
+                            <div class="home__contact-resource">
+                                <img
+                                    src="./assets/phone-logo.png"
+                                    class="home__icon"
+                                    alt="phone icon"
+                                />
+                                <span class="home__contact-resource-number">412-251-3132</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img
+                        src="./assets/Florian.jpg"
+                        class="home__kp-picture"
+                        alt="picture of Florian Reihl"
+                    />
+                </div>
+            </section>
+
+            <section id="about" class="section-container">
+                <div class="about-container">
+                    <span class="section__title">About me</span>
+                    <p class="about__text">
+                        I am a undergraduate at the
+                        <span class="about__text-pitt"
+                            >University of Pittsburgh</span
+                        >
+                        where I'm studying <span class="about__text-bold">Computer Science</span> with a minor in History.
+                        Currently, I just started working in the ADMT lab and started my capstone doing directed research for Assistant Professor Aakash.
+                        In my spare time, I’m the Branch leader at the Pitt Computer Science Club, a member of the wearable haptics project at the 
+                        Pitt Robotics and Automation Society, and the Urban Gaming Club.
+                        
+                    <p class="about__text">
+                        My passion is solving real-world problems, which is why I went into UX Design and, over time, picked up tools such as App and Stack Development to solve these problems. 
+                        I love learning about new technologies and how we can interact with them, such as 3D scanning and robotics.
+                        <span class="about__text-bold"
+                            >I strive to improve and inspire those around
+                            me.</span
+                        >
+                    </p>
+                </div>
+            </section>
+
+            <section id="experience" class="section-container">
+                <div class="experience-container">
+                    <div class="experience__skills-container">
+                        <span class="section__title">Skills</span>
+                        <div class="section__skills-container">
+                            <!-- Technical Skills -->
+                            <div class="section__skills-technical-container">
+                                <span
+                                    class="experience__skills-section-subtitle"
+                                    >Technical</span
+                                >
+                                <ul class="experience__skills-items-container">
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>C</li>
+                                    <li>Dart & Flutter</li>
+                                    <li>HTML</li>
+                                    <li>JavaScript</li>
+                                    <li>React.js</li>
+                                    <li>MySQL</li>
+                                    <li>MongoDB</li>
+                                    <li>Adobe InDesign</li>
+
+                                </ul>
+                            </div>
+
+                            <!-- Soft Skills -->
+                            <div class="section__skills-soft-container">
+                                <span
+                                    class="experience__skills-section-subtitle"
+                                    >Soft</span
+                                >
+                                <ul class="experience__skills-items-container">
+                                    <li>Patience</li>
+                                    <li>Simplifying Complexity</li>
+                                    <li>Design-conscious</li>
+                                    <li>Goodwill</li>
+                                </ul>
+                            </div>
+
+                            <!-- Language Skills -->
+                            <div class="section__skills-soft-container">
+                                <span
+                                    class="experience__skills-section-subtitle"
+                                    >Language</span
+                                >
+                                <ul class="experience__skills-items-container">
+                                    <li>English (Native)</li>
+                                    <li>German (Proficent)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jobs -->
+                    <div class="experience__experience-container">
+                        <span class="section__title">Work Experience</span>
+                        <div class="experience__job-container">
+                            <span class="experience__job-title"
+                                >Directed Research |
+                                <span class="experience__job-company"
+                                    >Assistant Professor Aakash Gautam</span
+                                ></span
+                                class="experience__job-company"
+                                    > 01/2024 – present</span
+                                ></span
+                            >
+                            <p class="experience__job-description">
+                                As part of my ongoing capstone project, Professor Aakash offered me to work with him on a web application in collaboration with Project Rebound to support digital literacy and job search among formerly incarcerated individuals as part of his HCI lab’s ongoing project. 
+                                Besides coding in React with Tailwind CSS and Firestore, my research duties as an assistant researcher focuses on answering "why" certain design decisions are made.
+                                As such, I determine what principles from existing academic research are needed, evaluate their effectiveness, and develop new ones for this specific group. 
+                                To determine quantitative and qualitative metrics, I'm completing my CITI training and writing IRB protocol to conduct user studies on my research to determine the effectiveness of my designs.
+                                At the end of my directed research, the results of my research will be a contribution of code in a public GitHub repository, deployment of the system within the partner organization’s office, and a research paper outlining my findings.
+                            </p>
+                        </div>
+                        <div class="experience__job-container">
+                            <span class="experience__job-title"
+                                >Volunteer Mentor |
+                                <span class="experience__job-company"
+                                    >AmeriCorps, KEYS</span
+                                ><br></span
+                                class="experience__job-company"
+                                    > 05/2022 – 08/2022</span
+                                ></span
+                            >
+                            <p class="experience__job-description">
+                                For a summer, I volunteered in my community as a mentor for low-income youth. 
+                                My role was to give instructions and supervise activities, develop skills and character, and encourage them to continue into higher education.
+                                I learned many valuable skills, such as patience, breaking down complex tasks, and effective communication.
+                                My work included writing progress reports, newsletters, surveys, and forms.
+                                I received the Segal AmeriCorps Education Award for Perfect Attendance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio" class="section-container">
+                <div class="portfolio-container">
+                    <span class="section__title"
+                        >Some of my favorite projects</span
+                    >
+
+                    <div class="portfolio__project">
+                        <a
+                            class="portfolio__project-header"
+                            href="https://github.com/Florian268/tell_me_more"
+                            target="_blank"
+                        >
+                            <img
+                                class="external-link-icon"
+                                src="./assets/external-link.png"
+                                alt="external link icon"
+                            />
+                            <span class="portfolio__project-title"
+                                >Tell me More CMU LLM Hackathon</span
+                            >
+                        </a>
+                        <p class="portfolio__project-description">
+                            Tell Me More’ was an app I developed for a 36-hour large language model hackathon at CMU in April 2023. The goal was to bridge my passion for history and computer science, focusing on Human-Computer Interaction (HCI). My approach involved exploring innovative ways to integrate Large Language Models (LLMs) into museums, creating a loop for users to ask follow-up questions using GPT-4.
+                            During the design testing phase, it became evident that users could be empowered to learn new information and gain exposure to diverse perspectives on a subject. This had the potential to challenge a museum’s narrative, leading one judge to describe it as 'counter-cultural art.' However, there were identified limitations, with the app occasionally producing inaccuracies and hallucinations.
+                            In response, efforts were made to improve accuracy by exploring prompt engineering methods. This involved incorporating the exhibit’s context and considering the user’s age group. Post-hackathon, I restructured the app using an MVVM architecture and am currently in the process of redesigning it to enhance its overall appeal.
+                        </p>
+
+                        <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Carousel Item 1: YouTube Video -->
+                                <div class="carousel-item active">
+                                    <div class="box">
+                                        <iframe class="youtube-iframe" src="https://www.youtube.com/watch?v=reDhDZS3mqc" frameborder="0" style="border: 2px solid #000;" allowfullscreen></iframe></iframe>
+                                    </div>
+                                </div>
+                        
+                                <!-- Carousel Item 2: Image -->
+                                <div class="carousel-item">
+                                    <img src="assets/redesign.png" class="d-block w-100" alt="Image" data-bs-toggle="modal" data-bs-target="#thirdImageModalLabel">
+                                </div>
+                            </div>
+                        
+                            <!-- Carousel Controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                         <!-- Image Modal -->
+                    <div class="modal fade" id="thirdImageModalLabel" tabindex="-1" aria-labelledby="thirdImageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="assets/redesign.png" class="image-modal" alt="Enlarged Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio__project">
+                        <a
+                            class="portfolio__project-header"
+                            href="https://devpost.com/software/pharmarelief"
+                            target="_blank"
+                        >
+                            <img
+                                class="external-link-icon"
+                                src="./assets/external-link.png"
+                                alt="external link icon"
+                            />
+                            <span class="portfolio__project-title"
+                                >Pharma Relief Pitt Challenge Hackathon</span
+                            >
+                        </a>
+                        <p class="portfolio__project-description">
+                            In my recent hackathon, I collaborated with three medical graduate students to develop a website aimed at connecting pharmacies with expiring medications. The motivation behind our project stemmed from the significant issue of pharmaceutical waste, with approximately $7 billion worth of resalable pharmaceuticals being returned to manufacturers annually.
+                            Our goal was to mitigate this waste by creating a platform where expiring medications could be better allocated through discounted channels. Similar to the company Cost-Plus Drugs but reducing the amount in circulation. To expedite our development process and allocate more time for testing our idea, we utilized Streamlit.
+                            In this project, my responsibilities centered around establishing the MongoDB database, integrating it with the website, and implementing the search feature. These components were crucial in ensuring the functionality and usability of our solution.                        </p>
+
+                        <iframe class="youtube-iframe" src="https://www.youtube.com/watch?v=uU9ri3GDHng" frameborder="0" style="border: 2px solid #000;" allowfullscreen></iframe></iframe>
+                        
+                    </div>
+
+
+                    <div class="portfolio__project">
+                        <a
+                            class="portfolio__project-header"
+                            href="https://github.com/Florian268/ToTheMoon-Florian"
+                            target="_blank"
+                        >
+                            <img
+                                class="external-link-icon"
+                                src="./assets/external-link.png"
+                                alt="external link icon"
+                            />
+                            <span class="portfolio__project-title"
+                                >Teen Brokerage Game App</span
+                            >
+                        </a>
+
+                        <p class="portfolio__project-description">
+                            In my Interface Design Methodology Class, two colleagues and I conceptualized an app designed to simulate the stock market, providing a platform for teenagers to engage without the need for a custodial account. Our primary focus was on making thoughtful design decisions and justifying them, such as implementing segmented selection for enhanced usability and restricting user actions to valid inputs.
+                            Developed using Flutter and Dart, our app follows an MVVM architecture, allowing seamless expansion and replacement of modules. This approach proved helped my understanding of the significance of architecture, enabling the integration of new features and the breakdown of complex tasks into manageable components. Additionally, I learnt how to organize projects with several members and follow agile development.
+                            
+                                                    </p>
+
+                        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Carousel Item 1: YouTube Video -->
+                                <div class="carousel-item active">
+                                    <div class="box">
+                                        <iframe class="youtube-iframe" src="https://www.youtube.com/watch?v=iPOipgEv5XA" frameborder="0" style="border: 2px solid #000; width: 100%; height: 400px;" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                        
+                                <!-- Carousel Item 2: Image -->
+                                <div class="carousel-item">
+                                    <img src="assets/brokerageapp.png" class="d-block w-100" alt="Image" data-bs-toggle="modal" data-bs-target="#secondImageModal">
+                                </div>
+                                <!-- Carousel Item 2: Image -->
+                                <div class="carousel-item">
+                                    <img src="assets/brokerageapp2.png" class="d-block w-100" alt="Image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                </div>
+                            </div>
+                        
+                            <!-- Carousel Controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Image Modal -->
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/brokerageapp2.png" class="image-modal" alt="Enlarged Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second Image Modal -->
+                    <div class="modal fade" id="secondImageModal" tabindex="-1" aria-labelledby="secondImageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/brokerageapp.png" class="image-modal" alt="Enlarged Second Image">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section-container">
+                <div class="contact-container">
+                    <span class="section__title contact-section__title"
+                        >Connect with Me</span
+                    >
+                    <ul class="contact__items-container">
+                        <li>
+                            <a
+                                class="contact__item-container"
+                                href="https://github.com/Florian268"
+                                target="_blank"
+                                ><img
+                                    src="./assets/github-logo.webp"
+                                    alt="github logo"
+                                    class="contact__item-logo"
+                                /><span class="contact__item-name"
+                                    >GitHub</span
+                                ></a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="contact__item-container"
+                                href="https://www.linkedin.com/in/florian-reihl-08103623a"
+                                target="_blank"
+                                ><img
+                                    src="./assets/linkedin-logo.png"
+                                    alt="linkedin logo"
+                                    class="contact__item-logo"
+                                /><span class="contact__item-name"
+                                    >LinkedIn</span
+                                ></a
+                            >
+                        </li>
+                        <!--
+                        <li>
+                            <a
+                                class="contact__item-container"
+                                href="https://twitter.com/kennypickett10?lang=en"
+                                target="_blank"
+                                ><img
+                                    src="./assets/x-logo.jpeg"
+                                    alt="x logo"
+                                    class="contact__item-logo"
+                                /><span class="contact__item-name">X</span></a
+                            >
+                        </li>
+                        -->
+                        <li>
+                            <a
+                                class="contact__item-container"
+                                href="https://www.instagram.com/florian_reihl/"
+                                target="_blank"
+                                ><img
+                                    src="./assets/instagram-logo.png"
+                                    alt="instagram logo"
+                                    class="contact__item-logo"
+                                /><span class="contact__item-name"
+                                    >Instagram</span
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <footer class="footer-container">Made with ❤️</footer>
+        </main>
+    </body>
+</html>
